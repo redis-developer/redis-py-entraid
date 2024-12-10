@@ -118,7 +118,6 @@ class EntraIdCredentialsProvider(StreamingCredentialProvider):
         if self._is_streaming is False:
             self._token_mgr.start(
                 self._listener,
-                block_for_initial=True
             )
             self._is_streaming = True
 
